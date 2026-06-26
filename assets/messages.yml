@@ -1,14 +1,10 @@
 categories:
-
   - category: deny
     name: Deny
-
   - category: duplicate
     name: Duplicate
-    
   - category: request
     name: Request Information
-
 
 variables:
   PROJECT:
@@ -26,7 +22,6 @@ variables:
       value: WEB
 
 messages:
-
   request_launcher_logs:
     - name: Request launcher logs
       category: request
@@ -34,22 +29,6 @@ messages:
       fillname: []
       message: |
         Please attach the full launcher log found in [minecraft/launcher_log.txt](https://minecrafthopper.net/help/finding-minecraft-data-folder/).
-
-  modified_version:
-    - name: Modified client
-      category: deny
-      project: [mc, mcl, realms]
-      fillname: []
-      message: |
-        Mojira does not accept reports from modified games.
-
-  not_latest:
-    - name: Not latest
-      category: deny
-      project: [mc, mcl, realms]
-      fillname: []
-      message: |
-        Only the latest versions of the game are supported on Mojira.
 
   request_world:
     - name: Request world
@@ -62,7 +41,7 @@ messages:
   request_f3:
     - name: Request F3 screenshot
       category: request
-      project: mc
+      project: [mc]
       fillname: []
       message: |
         Please attach a screenshot with the F3 debug screen enabled.
@@ -88,3 +67,27 @@ messages:
         - Issue ID
       message: |
         This issue is a duplicate of [%PROJECT%-%s%](https://bugs.mojang.com/browse/%PROJECT%/issues/%PROJECT%-%s%).
+
+  modified_version:
+    - name: Modified client
+      category: deny
+      project: [mc, mcl, realms]
+      fillname: []
+      message: |
+        The Minecraft Bug Tracker does not accept reports from modified games.
+
+  not_latest:
+    - name: Not latest
+      category: deny
+      project: [mc, mcl, realms]
+      fillname: []
+      message: |
+        Only the latest versions of the game are supported on the Minecraft Bug Tracker.
+
+  technical_issue:
+    - name: Technical issue
+      category: deny
+      project: [mc, mcpe, mcl, realms]
+      fillname: []
+      message: |
+        This is the Minecraft Bug Tracker. Please contact [Minecraft: Community Support](https://minecrafthopper.net/help/technical-support-resources/) for assistance.
