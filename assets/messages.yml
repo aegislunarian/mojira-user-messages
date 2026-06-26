@@ -5,6 +5,21 @@ categories:
   - category: duplicate
     name: Duplicate
 
+variables:
+  PROJECT:
+    - project: mc
+      value: MC
+    - project: mcpe
+      value: MCPE
+    - project: mcl
+      value: MCL
+    - project: bds
+      value: BDS
+    - project: realms
+      value: REALMS
+    - project: web
+      value: WEB
+
 messages:
 
   request_launcher_logs:
@@ -51,4 +66,4 @@ messages:
       fillname:
         - Issue ID
       message: |
-        This issue is a duplicate of %s%.
+        This issue is a duplicate of [%PROJECT%-%s%](https://bugs.mojang.com/browse/%PROJECT%/issues/%PROJECT%-%s%).
