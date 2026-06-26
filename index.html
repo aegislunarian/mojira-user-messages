@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mojira Messages</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://kit.fontawesome.com/76ec3903cc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background container-fluid">
+        <div class="main">
+            <h2 class="display-4">Mojira Message Web Application</h2>
+            <div class="selector">
+                <select class="form-select me-sm-2">
+                    <option value="0" selected>Select a message</option>
+                </select>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle align-baseline" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Project: MC
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="projectDropdownMenu">
+                    </ul>
+                </div>
+            </div>
+            <div class="inputarea">
+                <div class="stdtext">
+                    <p class="text-body-secondary" id="msginfo">Please select a message.</p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-secondary" id="copybutton" data-toggle="tooltip"
+                data-placement="top" title="Copied!" disabled>Copy</button>
+            <div class="footer">
+                <small class="text-body-secondary">Made by <a href="https://bugs.mojang.com/secure/ViewProfile.jspa?name=Bemoty"target="_blank">Bemoty</a>, edited by <a href="https://bugs.mojang.com/secure/ViewProfile.jspa?name=Lunarian"target="_blank">Lunarian</a>.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import JS Bundle -->
+    <script src="bundle.js"></script>
+</body>
+
+</html>

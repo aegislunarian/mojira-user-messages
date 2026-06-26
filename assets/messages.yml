@@ -1,0 +1,69 @@
+categories:
+  - category: request
+    name: Request Information
+
+  - category: duplicate
+    name: Duplicate
+
+variables:
+  PROJECT:
+    - project: mc
+      value: MC
+    - project: mcpe
+      value: MCPE
+    - project: mcl
+      value: MCL
+    - project: bds
+      value: BDS
+    - project: realms
+      value: REALMS
+    - project: web
+      value: WEB
+
+messages:
+
+  request_launcher_logs:
+    - name: Request launcher logs
+      category: request
+      project: [mc, mcpe, mcl, bds, realms]
+      fillname: []
+      message: |
+        Please attach the full launcher log found in [minecraft/launcher_log.txt](https://minecrafthopper.net/help/finding-minecraft-data-folder/).
+
+  request_world:
+    - name: Request world
+      category: request
+      project: [mc, mcpe]
+      fillname: []
+      message: |
+        Please attach the world file found in [minecraft/saves/<world name>](https://minecrafthopper.net/help/finding-minecraft-data-folder/).
+
+  request_f3:
+    - name: Request F3 screenshot
+      category: request
+      project: mc
+      fillname: []
+      message: |
+        Please attach a screenshot with the F3 debug screen enabled.
+
+  request_video:
+    - name: Request video
+      category: request
+      project: [mc, mcpe, mcl, bds, realms]
+      fillname: []
+      message: |
+        Could you record a video and link it here?
+
+        If you are on Windows, you can use **Windows + Alt + R** to start the built-in Game Bar recorder.
+        If you are on macOS (Mojave or later), you can use **Shift + Command + 5** to open the built-in screen recorder.
+        If you do not have recording software, I recommend using **OBS Studio**.
+        If the resulting video is too large to upload to the bug tracker, please upload it elsewhere (for example as an unlisted YouTube video) and link it here.
+
+  duplicate:
+    - name: Duplicate of...
+      category: duplicate
+      project: [mc, mcpe, mcl, bds, realms, web]
+      fillname:
+        - Issue ID
+      message: |
+        This issue is a duplicate of [%PROJECT%-%s%](https://bugs.mojang.com/browse/%PROJECT%/issues/%PROJECT%-%s%).
