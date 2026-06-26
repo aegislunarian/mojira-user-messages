@@ -1,9 +1,14 @@
 categories:
-  - category: request
-    name: Request Information
+
+  - category: deny
+    name: Deny
 
   - category: duplicate
     name: Duplicate
+    
+  - category: request
+    name: Request Information
+
 
 variables:
   PROJECT:
@@ -29,6 +34,22 @@ messages:
       fillname: []
       message: |
         Please attach the full launcher log found in [minecraft/launcher_log.txt](https://minecrafthopper.net/help/finding-minecraft-data-folder/).
+
+  modified_version:
+    - name: Modified client
+      category: deny
+      project: [mc, mcl, realms]
+      fillname: []
+      message: |
+        Mojira does not accept reports from modified games.
+
+  not_latest:
+    - name: Not latest
+      category: deny
+      project: [mc, mcl, realms]
+      fillname: []
+      message: |
+        Only the latest versions of the game are supported on Mojira.
 
   request_world:
     - name: Request world
